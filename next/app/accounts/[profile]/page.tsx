@@ -4,7 +4,7 @@ export default function Profile({params}:{params:{profile: string}}) {
 
     return (
         <h1>
-            profile about accounts number {params.profile}
+            profile about account number {params.profile}
         </h1>
     )
 }
