@@ -1,3 +1,7 @@
+export const metadata={
+    title:"about BAI tech"
+}
+
 export default function About(){
     return (
         <h1>
