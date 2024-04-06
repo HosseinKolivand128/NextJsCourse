@@ -1,9 +1,11 @@
+import Card from "@/components/Card";
+
 export default function Revenue(){
     return(
         <>
-            <div>
+            <Card>
                 notifications slot
-            </div>
+            </Card>
         </>
     )
 }
