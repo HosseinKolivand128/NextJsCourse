@@ -3,14 +3,17 @@ export default function RootLayout({
   children,
   users,
   revenue,
-  notifications
+  notifications,
+  login
 }: Readonly<{
   children: React.ReactNode;
   users:React.ReactNode,
   revenue:React.ReactNode,
   notifications:React.ReactNode,
+  login:React.ReactNode
 }>) {
-  return (
+  let isLoggedIn = true;
+  return isLoggedIn ? (
     <>
     <div>
         {children}
@@ -24,6 +27,10 @@ export default function RootLayout({
             {notifications}
         </div>
     </div>
+    </>
+  ) : (
+    <>
+    {login}
     </>
   );
 }
